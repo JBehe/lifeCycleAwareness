@@ -17,7 +17,7 @@ class mainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         val  viewModel = ViewModelProvider(this ).get(mainViewModel::class.java)
-        lifecycle.addObserver(demoObserver())
+        //lifecycle.addObserver(demoObserver())
         val resultObserver = Observer<String>{
             result -> resultText = result.toString()
         }
